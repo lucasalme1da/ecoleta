@@ -1,0 +1,38 @@
+.popup {  
+  position: fixed;  
+  z-index: 1001;
+  width: 100%;  
+  height: 100%;  
+  top: 0;  
+  left: 0;  
+  right: 0;  
+  bottom: 0;  
+  margin: auto;  
+  background-color: rgba(0,0,0, 0.8);  
+}  
+
+.popup-inner {  
+  position: absolute;  
+  left: 40%;  
+  right: 40%;  
+  top: 40%;  
+  bottom: 40%;  
+  margin: auto;  
+  border-radius: 20px;  
+  background: white;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.popup-inner .check {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.popup-inner h1 {
+  font-size: 1.5em;
+  text-align: center;
+}
