@@ -12,7 +12,7 @@ const PopUp = ({ message, type }: Pop) => {
   return (
     <div className='popup'>
       <div className='popup-inner'>
-        <FiCheckCircle className="check" />
+        <FiCheckCircle className="check" color="#2FB86E" />
         <h1>{message}</h1>
       </div>
     </div>
