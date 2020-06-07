@@ -57,7 +57,7 @@ const CreatePoint = () => {
   useEffect(() => {
     axios.get<IBGEUFResponse[]>('https://servicodados.ibge.gov.br/api/v1/localidades/estados/')
       .then(res => {
-        const ufInitials = res.data.map(uf => uf.sigla)
+        const ufInitials = res.data.map(uf => uf.sigla).sort()
         setUfs(ufInitials)
       })
   }, [])
